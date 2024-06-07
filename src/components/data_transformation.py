@@ -150,8 +150,8 @@ class DataTransformation:
             logging.info('Obtaining preprocessing object')
             preprocessing_obj = self.get_data_transformation_object()
 
-            target_column_name = 'Default'  # Replace with your actual target variable
-            drop_columns = [target_column_name, 'Own_House_Age', 'Score_Source_1', 'Social_Circle_Default', 'Score_Source_3']  # Adjust according to your dataset
+            target_column_name = 'Default'  
+            drop_columns = [target_column_name, 'Own_House_Age', 'Score_Source_1', 'Social_Circle_Default', 'Score_Source_3']  
 
             # Features into independent and dependent features
             input_feature_train_df = train_df.drop(columns=drop_columns, axis=1)
